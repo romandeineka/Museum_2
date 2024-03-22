@@ -1,0 +1,65 @@
+.button-transparent {
+  color: $white-color;
+  width: 100%;
+  height: 60px;
+  border-style: none;
+  margin-top: 30px;
+  border: 1px solid $orange-color;
+  position: relative;
+
+  @include hover (border-color, rgba(175, 52, 25, 1));
+
+  &:active {
+    border-color: rgba(234, 52, 13, 1);
+  }
+
+  &--onMobile {
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &--onTablet {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      grid-column: 5 / -1;
+      margin: 0;
+    }
+
+    @include onDesktop {
+      grid-column: 10 / -1;
+    }
+  }
+
+  &__link {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 56px;
+    text-decoration: none;
+    color: $orange-color;
+    width: 100%;
+    display: block;
+  }
+
+  &__arrow {
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    right: 49px;
+    display: block;
+    position: absolute;
+    top: 19px;
+
+    @include onTablet {
+      right: 6px;
+    }
+
+    @include onDesktop {
+      right: 55px;
+    }
+  }
+}

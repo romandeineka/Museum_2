@@ -1,0 +1,66 @@
+.nav {
+  margin-bottom: 40px;
+
+  @include onTablet {
+    grid-column: 1 / 6;
+    margin-bottom: 0;
+  }
+  @include onDesktop{
+    grid-column: 1 / 7;
+    // margin-bottom: 0;
+  }
+
+  &__list {
+    list-style: none;
+
+    &--item {
+      margin-bottom: 20px;
+     
+
+      @include onTablet {
+        margin-bottom: 30px;
+      }
+
+      @include onDesktop {
+        margin-bottom: 60px;
+    
+        &:hover ::after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          background-color: $white-color;
+          height: 1px;
+          top: 60px;
+          left: 0;
+        }
+      }
+
+      &-margim-bottom {
+        @include onTablet {
+          margin-bottom: 50px;
+        }
+
+        @include onDesktop {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white-color;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    position: relative;
+
+    @include onTablet {
+      font-size: 48px;
+      line-height: 58px;
+    }
+  
+  }
+
+}

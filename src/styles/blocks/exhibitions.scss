@@ -1,0 +1,30 @@
+.exhibitions {
+  @include contentPaddingInline;
+
+  margin-bottom: 120px;
+
+  @include onTablet {
+    margin-bottom: 160px;
+
+    @include pageGrid;
+  }
+
+  @include onDesktop {
+    margin-bottom: 200px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @include onTablet {
+      grid-column: 1 / 5;
+      margin-bottom: 75px;
+     
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 7;
+      margin-bottom: 71px;
+    }
+  }
+}

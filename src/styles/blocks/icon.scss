@@ -1,0 +1,22 @@
+.icon {
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  @include hover(transform, scale(1.2));
+
+  @include onTablet {
+    width: 30px;
+    height: 30px;
+  }
+
+  &--close {
+    background-image: url(../images/menu/close.png);
+  }
+
+  &--arrowdown {
+    width: 8px;
+    height: 5px;
+  }
+}

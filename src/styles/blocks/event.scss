@@ -1,0 +1,66 @@
+.event {
+margin-bottom: 60px;
+
+@include onTablet {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 0;
+
+  &:first-of-type {
+    @include onTablet {
+      margin-bottom: 70px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@include onDesktop {
+  @include pageGrid;
+}
+
+  &__img {
+    height: 358px;
+    margin-bottom: 20px;
+
+    @include onTablet {
+      height: 422px;
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+      width: 100%;
+      height: 475px;
+    }
+  }
+
+  &__date {
+    margin-bottom: 10px;
+    color: $orange-color;
+    display: block;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    display: block;
+
+    @include onTablet {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__wrap {
+    @include onDesktop {
+      grid-column: 5 / 11;
+    }
+  }
+
+}

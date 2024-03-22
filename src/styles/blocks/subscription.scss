@@ -1,0 +1,82 @@
+.subscription {
+  @include contentPaddingInline;
+  margin-bottom: 80px;
+
+  @include onTablet {
+    @include pageGrid;
+    margin-bottom: 128px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 200px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include onTablet {
+      grid-column: 1 / 6;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__descr {
+    display: block;
+    margin-bottom: 50px;
+
+    @include onTablet {
+      grid-column: 1 / 6;
+      color: $black-color;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / -1;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $black-color;
+    margin-bottom: 30px;
+    padding-bottom: 3px;
+
+    
+    @include hover(border-bottom, 1px solid $orange-color);
+
+    &:focus {
+      color: $orange-color;
+      border-bottom: 1px solid $orange-color;
+    }
+
+    &:not(:placeholder-shown) {
+      color: $black-color;
+      font-weight: 700;
+    } 
+
+    @include onTablet {
+      grid-column: 1 / 5;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+      margin-bottom: 40px;
+    }
+
+    &::placeholder {
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $black-color;
+    }
+  }
+}
+.subscription__input:hover::placeholder {
+  color: $orange-color;
+}

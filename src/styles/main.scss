@@ -1,7 +1,28 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/footer';
+@import 'blocks/button';
+@import 'blocks/menu';
+@import 'blocks/icon';
+@import 'blocks/nav';
+@import 'blocks/body';
+@import 'blocks/lang';
+@import 'blocks/exhibitions';
+@import 'blocks/exhibition';
+@import 'blocks/button-transparent';
+@import 'blocks/events';
+@import 'blocks/event';
+@import 'blocks/visit';
+@import 'blocks/news';
+@import 'blocks/news-wrap';
+@import 'blocks/subscription';
 
-body {
-  background: $c-gray;
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
