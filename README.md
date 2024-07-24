@@ -12,7 +12,6 @@ This is an implementation of the landing page, according to [Figma design](https
 - Tablet 744px
 - Desktop 1260px
 
-#№ Preview Link
+## Preview Link
 [Demo Link](https://romandeineka.github.io/Museum_2/)
 
-> To update you PR repeat steps 7-11.
