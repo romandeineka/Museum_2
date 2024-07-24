@@ -9,8 +9,8 @@ This is an implementation of the landing page, according to [Figma design](https
 
 ## Landing page has the responsive layout for:
 - Mobile (> 320px)
-- Tablet 744px
-- Desktop 1260px
+- Tablet 768px
+- Desktop 1280px
 
 ## Preview Link
 - [Demo Link](https://romandeineka.github.io/Museum_2/)
