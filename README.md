@@ -13,5 +13,5 @@ This is an implementation of the landing page, according to [Figma design](https
 - Desktop 1260px
 
 ## Preview Link
-[Demo Link](https://romandeineka.github.io/Museum_2/)
+- [Demo Link](https://romandeineka.github.io/Museum_2/)
 
