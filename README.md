@@ -10,11 +10,11 @@ CSS3 (SCSS)
 BEM-methodology
 Figma
 
-###Landing page has the responsive layout for:
+##Landing page has the responsive layout for:
 Mobile (> 320px)
 Tablet 744px
 Desktop 1260px
 
-####Preview Link
+##Preview Link
 
 > To update you PR repeat steps 7-11.
